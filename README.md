@@ -1,11 +1,8 @@
 # pulumi-project
 set up an AWS VPC
 
+Hello, I just add jack into the community.
 
-hello i made some changes. 
 
-
-yoooo2
-yoooo
 
 
