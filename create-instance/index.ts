@@ -6,7 +6,7 @@ const ami  = "ami-0ff8a91507f77f867"; // AMI for Amazon Linux in us-east-1 (Virg
 const vpc = vpcId; 
 const pubSubnet0 = vpcPublicSubnetIds[0];    
 const priSubnet0 = vpcPrivateSubnetIds[0];   
-const MyKeyPair = "MyKeyPair"
+const MyKeyPair = "MyKeyPair" //use your key pair!
 
 
 const pubGroup = new aws.ec2.SecurityGroup("pubsubnet-secgrp", {
@@ -66,3 +66,9 @@ const priInstance1 = new aws.ec2.Instance("priInstance-1", {
     ami: ami,
     keyName: MyKeyPair,
 });
+
+exports.pubInstance_privateIp = pubInstance.privateIp;
+exports.pubInstance_HostName = pubInstance.publicDns;
+exports.priInstance_privateIp = priInstance.privateIp;
+exports.PriInstance1_privateIp = priInstance1.privateIp;
+
