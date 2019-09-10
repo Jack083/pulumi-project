@@ -26,9 +26,9 @@
 
 <h4> 1. To access public instance, type: ssh -A ec2-user@<public instance’s DNS> </h4>
 
-2. Access to private instance from public instance, type: ssh -A ec2-user@<private instance’s private Ip>
+<h4> 2. Access to private instance from public instance, type: ssh -A ec2-user@<private instance’s private Ip> </h4>
 
-3. Access to google from private instance, type: ping 8.8.8.8
+<h4> 3. Access to google from private instance, type: ping 8.8.8.8 </h4>
 
 
 
