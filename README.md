@@ -22,7 +22,7 @@ Set up custom VPC in AWS
 
 
 
-<h1> Test the connection <h1>
+<h1> Test the connection
 
 <p> 1. To access public instance, type: ssh -A ec2-user@<public instance’s DNS> <p>
 
