@@ -1,4 +1,4 @@
-<title> Set up custom VPC in AWS </title>
+<h1> Set up custom VPC in AWS </h1>
 1. export AWS_DEFAULT_REGION=us-east-1    //set the region at Virginia. If you change this you have to change the ami in ~/pulumi-project/create-instance/index.ts
 
 2. Create key pair following the process below: (for more detail refer to https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html#retrieving-the-public-key)
