@@ -5,15 +5,17 @@
    2. Create key pair following the process below: (for more detail refer to https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html#retrieving-the-public-key)
 </h4>
 <ul> 
-     <li> 1. aws ec2 create-key-pair --key-name MyKeyPair --query 'KeyMaterial' --output text > MyKeyPair.pem  //create a key pair call MyKeyPair </li>
-     <li> 2. chmod 400 MyKeyPair.pem    //config the authority </li>
-     <li> 3. ssh-keygen -y -f MyKeyPair.pem  //get public key and store that in ~/.ssh/authorized_keys </li>
+     <li>  aws ec2 create-key-pair --key-name MyKeyPair --query 'KeyMaterial' --output text > MyKeyPair.pem  //create a key pair call MyKeyPair </li>
+     <li>  chmod 400 MyKeyPair.pem    //config the authority </li>
+     <li>  ssh-keygen -y -f MyKeyPair.pem  //get public key and store that in ~/.ssh/authorized_keys </li>
 </ul>
 
-<h4> 3. Configure ssh-agent on Mac (for more detail refer to https://aws.amazon.com/blogs/security/securely-connect-to-linux-instances-running-in-a-private-amazon-vpc/) </h4>
-    1. ssh-add -K myPrivateKey.pem
-    2. ssh-add –L
-
+<h4> 3. Configure ssh-agent on Mac (for more detail refer to https://aws.amazon.com/blogs/security/securely-connect-to-linux-instances-running-in-a-private-amazon-vpc/) 
+</h4>
+<ul>
+    <li>  ssh-add -K myPrivateKey.pem </li>
+    <li>  ssh-add –L </li>
+</ul>
 <h4> 4. Go to ~/pulumi-project/create-instance </h4>
 
 <h4> 5. Run pulumi up </h4>
