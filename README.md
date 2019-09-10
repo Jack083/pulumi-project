@@ -1,4 +1,4 @@
-Set up custom VPC in AWS
+<title> Set up custom VPC in AWS </title>
 1. export AWS_DEFAULT_REGION=us-east-1    //set the region at Virginia. If you change this you have to change the ami in ~/pulumi-project/create-instance/index.ts
 
 2. Create key pair following the process below: (for more detail refer to https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html#retrieving-the-public-key)
@@ -22,7 +22,7 @@ Set up custom VPC in AWS
 
 
 
-<h1> Test the connection
+    <title> Test the connection </title>
 
 <p> 1. To access public instance, type: ssh -A ec2-user@<public instance’s DNS> <p>
 
