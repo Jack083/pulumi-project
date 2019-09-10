@@ -9,6 +9,7 @@ Set up custom VPC in AWS
     2. ssh-add –L
 4. go to ~/pulumi-project/create-instance
 5. Run pulumi up
+6. Preview the update and press "yes" to start the deployment.
 
 
 Test the connection
