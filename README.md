@@ -21,7 +21,8 @@ Set up custom VPC in AWS
 8. Also, it will deploy a ec2 instance with a security group in each public subnet and two ec2 instances with a security group in each private subnet. 
 
 
-Test the connection
+
+<h1>Test the connection<h1>
 
 1. To access public instance, type: ssh -A ec2-user@<public instance’s DNS>
 
