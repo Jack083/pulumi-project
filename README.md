@@ -18,7 +18,7 @@
 </ul>
 <h4> 4. Go to ~/pulumi-project/create-instance </h4>
 
-<h4> 5. Run pulumi up </h4>
+<h4> 5. Run "pulumi up" in the command line </h4>
 
 <h4> 6. Preview the update and press "yes" to start the deployment. </h4>
 
