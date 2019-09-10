@@ -10,7 +10,7 @@ Set up custom VPC in AWS
     1. ssh-add -K myPrivateKey.pem
     2. ssh-add –L
 
-4. go to ~/pulumi-project/create-instance
+4. Go to ~/pulumi-project/create-instance
 
 5. Run pulumi up
 
