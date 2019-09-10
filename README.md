@@ -4,7 +4,7 @@ Set up custom VPC in AWS
 2. Create key pair following the process below: (for more detail refer to https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html#retrieving-the-public-key)
     1. aws ec2 create-key-pair --key-name MyKeyPair --query 'KeyMaterial' --output text > MyKeyPair.pem   //create a key pair call MyKeyPair
     2. chmod 400 MyKeyPair.pem    //config the authority
-    3. ssh-keygen -y -f MyKeyPair.pem   //get public key
+    3. ssh-keygen -y -f MyKeyPair.pem   //get public key and store that in ~/.ssh/authorized_keys
 
 3. Configure ssh-agent on Mac (for more detail refer to https://aws.amazon.com/blogs/security/securely-connect-to-linux-instances-running-in-a-private-amazon-vpc/)
     1. ssh-add -K myPrivateKey.pem
