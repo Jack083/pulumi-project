@@ -16,6 +16,10 @@ Set up custom VPC in AWS
 
 6. Preview the update and press "yes" to start the deployment.
 
+7. After deployment, it should succesfully set up a VPC with two availability zones. Each availibility zone will have a public subnet and a private subnet with a Nat gateway in the public subnet. 
+
+8. Also, it will deploy a ec2 instance with a security group in each public subnet and two ec2 instances with a security group in each private subnet. 
+
 
 Test the connection
 
